@@ -20,7 +20,7 @@ def find_intersection(s1, s2):
 
 class EmployeeSlotViewSet(viewsets.ModelViewSet):
     """
-    API endpoint that allows users to be viewed or edited.
+    API endpoint that allows employee slots to be viewed or edited.
     """
     queryset = EmployeeSlot.objects.all().order_by('start_date')
     serializer_class = EmployeeSlotSerializer
@@ -28,7 +28,7 @@ class EmployeeSlotViewSet(viewsets.ModelViewSet):
 
 class CandidateSlotViewSet(viewsets.ModelViewSet):
     """
-    API endpoint that allows users to be viewed or edited.
+    API endpoint that allows candidate slots to be viewed or edited.
     """
     queryset = CandidateSlot.objects.all().order_by('start_date')
     serializer_class = CandidateSlotSerializer
@@ -36,7 +36,7 @@ class CandidateSlotViewSet(viewsets.ModelViewSet):
 
 class EmployeeViewSet(viewsets.ModelViewSet):
     """
-    API endpoint that allows groups to be viewed or edited.
+    API endpoint that allows employees to be viewed or edited.
     """
     queryset = Employee.objects.all()
     serializer_class = EmployeeSerializer
@@ -44,7 +44,7 @@ class EmployeeViewSet(viewsets.ModelViewSet):
 
 class CandidateViewSet(viewsets.ModelViewSet):
     """
-    API endpoint that allows groups to be viewed or edited.
+    API endpoint that allows candidates to be viewed or edited.
     """
     queryset = Candidate.objects.all()
     serializer_class = CandidateSerializer
